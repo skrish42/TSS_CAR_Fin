@@ -1,0 +1,32 @@
+<h3><a class="btn btn-secondary" href="/employa"><i class="fa fa-plus"></i> Book Slot</a> Booked Slots</h3>
+<button onclick="history.back()">Go Back</button>
+<table class="table table-striped" style="width: 900px;">
+    <thead>
+        <tr>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>Department</th>
+            <th>Idea Type</th>
+            <th>Project Name</th>
+            <th>Project Description</th>
+            <th>Project Experience</th>
+            <th>Register Number</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td>{{this.fullName}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.mobile}}</td>
+            <td>{{this.department}}</td>
+            <td>{{this.idea}}</td>
+            <td>{{this.pid}}</td>
+            <td>{{this.pidea}}</td>
+            <td>{{this.pexp}}</td>
+            <td>{{this.regs}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
